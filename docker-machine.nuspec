@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>docker-machine</id>
+    <title>docker-machine (Install)</title>
+    <version>0.2.0</version>
+    <authors>Docker, http://www.docker.com/</authors>
+    <owners>Docker Contributors</owners>
+    <summary>Package to download and install docker-machine</summary>
+    <description>This package will download and install docker-machine
+    </description>
+    <projectUrl>https://github.com/silarsis/choco-docker-machine</projectUrl>
+    <tags>docker-machine docker</tags>
+    <copyright></copyright>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<dependencies>
+      <dependency id="" version="__VERSION__" />
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
