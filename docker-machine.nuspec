@@ -6,8 +6,8 @@
     <id>docker-machine</id>
     <title>docker-machine (Install)</title>
     <version>0.2.0</version>
-    <authors>Docker, http://www.docker.com/</authors>
-    <owners>Docker Contributors</owners>
+    <authors>Docker Contributors</authors>
+    <owners>silarsis</owners>
     <summary>Package to download and install docker-machine</summary>
     <description>This package will download and install docker-machine
     </description>
