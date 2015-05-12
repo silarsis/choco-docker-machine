@@ -75,7 +75,8 @@ Run the following commands to verify uninstallation works:
 
 > **CAUTION:** You can upload a version only once (chocolatey does not
 > allow overwriting packages). Therefore be careful since you can do
-> this step only once without changing `<version>` string.
+> this step only once without changing `<version>` string. Note, you _can_
+> upload multiple times until the package has been approved.
 
 Go to http://chocolatey.org and log in.
 
