@@ -9,9 +9,9 @@
     <authors>Docker Contributors</authors>
     <owners>silarsis</owners>
     <summary>Package to download and install docker-machine</summary>
-    <description>This package will download and install docker-machine
+    <description>This package will download and install docker-machine. Repo at  https://github.com/silarsis/choco-docker-machine
     </description>
-    <projectUrl>https://github.com/silarsis/choco-docker-machine</projectUrl>
+    <projectUrl>https://github.com/docker/machine</projectUrl>
     <tags>docker-machine docker</tags>
     <copyright></copyright>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
