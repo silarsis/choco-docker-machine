@@ -5,13 +5,14 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>docker-machine</id>
     <title>docker-machine (Install)</title>
-    <version>0.3.0-rc2</version>
+    <version>0.3.0</version>
     <authors>Docker Contributors</authors>
     <owners>silarsis</owners>
     <summary>Package to download and install docker-machine</summary>
     <description>This package will download and install docker-machine. Repo at  https://github.com/silarsis/choco-docker-machine
     </description>
     <projectUrl>https://github.com/docker/machine</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/silarsis/choco-docker-machine/345800887c89f46ab9db22133326efd13cde8104/docker.png</iconUrl>
     <tags>docker-machine docker</tags>
     <copyright></copyright>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
