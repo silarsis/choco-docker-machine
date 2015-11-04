@@ -7,5 +7,5 @@ $checksumType   = 'md5'
 $checksumType64 = 'md5'
 $unzipLocation = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-Install-ChocolateyZipPackage "docker-machine" "$url" "$unzipLocation" "$url64bit" `
+Install-ChocolateyZipPackage "docker-machine" "$url" "$unzipLocation" "$url64" `
  -checksum $checksum -checksumType $checksumType -checksum64 $checksum64 -checksumType64 $checksumType64
