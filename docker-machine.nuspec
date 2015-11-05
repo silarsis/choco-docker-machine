@@ -1,29 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>docker-machine</id>
-    <title>docker-machine (Install)</title>
-    <version>0.4.1</version>
+    <title>docker-machine</title>
+    <version>0.5.0</version>
     <authors>Docker Contributors</authors>
     <owners>silarsis</owners>
     <summary>Package to download and install docker-machine</summary>
-    <description>This package will download and install docker-machine. Repo at  https://github.com/silarsis/choco-docker-machine
+    <description>This package will download and install docker-machine.
     </description>
     <projectUrl>https://github.com/docker/machine</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/silarsis/choco-docker-machine/345800887c89f46ab9db22133326efd13cde8104/docker.png</iconUrl>
+    <packageSourceUrl>https://github.com/silarsis/choco-docker-machine</packageSourceUrl>
+    <iconUrl>https://raw.githubusercontent.com/docker/machine/master/docs/img/logo.png</iconUrl>
     <tags>docker-machine docker</tags>
-    <copyright></copyright>
-    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <licenseUrl>https://github.com/docker/machine/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<dependencies>
-      <dependency id="" version="__VERSION__" />
-      <dependency id="" />
-    </dependencies>-->
-    <releaseNotes></releaseNotes>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
 </package>
