@@ -11,9 +11,16 @@
     </description>
     <projectUrl>https://github.com/docker/machine</projectUrl>
     <packageSourceUrl>https://github.com/silarsis/choco-docker-machine</packageSourceUrl>
+    <projectSourceUrl>https://github.com/docker/machine</projectSourceUrl>
+    <docsUrl>https://docs.docker.com/machine/</docsUrl>
+    <bugTrackerUrl>https://github.com/docker/machine/issues</bugTrackerUrl>
     <iconUrl>https://raw.githubusercontent.com/docker/machine/master/docs/img/logo.png</iconUrl>
-    <tags>docker-machine docker</tags>
     <licenseUrl>https://github.com/docker/machine/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>docker-machine docker</tags>
+    <releaseNotes>https://github.com/docker/machine/releases</releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
