@@ -52,6 +52,9 @@ if ($(docker-machine ls).Contains("test   -        none             http://127.0
   Write-Error "FAIL: machine not found"
 }
 
+"TEST: Remove the machine should work"
+. docker-machine rm test
+
 "TEST: Uninstall show remove the binary"
 . choco uninstall docker-machine
 try {
