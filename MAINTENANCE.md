@@ -53,7 +53,7 @@ Push your changes to GitHub and check the AppVeyor build. See the AppVeyor build
 
 After a successfull AppVeyor build tag the sources and push the new tag to GitHub. This step builds and tests the package and pushes the new package to Chocolatey.
 
-    git tag 0.5.0
+    git tag 0.5.1
     git push --tags
 
 ## AppVeyor build
@@ -98,7 +98,7 @@ Run the following commands to verify uninstallation works:
     choco uninstall docker-machine
     docker-machine // shouldn't work
 
-See the script `test.ps1` for all tests that run on AppVeyor.
+See the script `test.ps1` for all tests that run on AppVeyor. The script is used to test both the 32bit and the 64bit download link.
 
 ### Deploy steps
 
@@ -115,7 +115,7 @@ Copy the example command with your key
 
 Push the package
 
-    choco push docker-machine.0.5.0.nupkg
+    choco push docker-machine.0.5.1.nupkg
 
 While in moderation you can push the package again to fix errors in the description or installation script etc.
 
