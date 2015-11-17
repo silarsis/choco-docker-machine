@@ -3,11 +3,11 @@
   <metadata>
     <id>docker-machine</id>
     <title>docker-machine</title>
-    <version>0.5.0</version>
+    <version>0.5.1</version>
     <authors>Docker Contributors</authors>
     <owners>silarsis</owners>
-    <summary>Package to download and install docker-machine</summary>
-    <description>This package will download and install docker-machine.
+    <summary>Machine management for a container-centric world</summary>
+    <description>Machine lets you create Docker hosts on your computer, on cloud providers, and inside your own data center. It creates servers, installs Docker on them, then configures the Docker client to talk to them.
     </description>
     <projectUrl>https://github.com/docker/machine</projectUrl>
     <packageSourceUrl>https://github.com/silarsis/choco-docker-machine</packageSourceUrl>
