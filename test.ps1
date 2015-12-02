@@ -44,7 +44,7 @@ if (-Not $(docker-machine --version).Contains("version $version ")) {
 }
 
 "TEST: Create a machine with driver none should work"
-. docker-machine create -d none --url http://127.0.0.1:2376 test
+. docker-machine create -d none --url http://1.2.3.4:2375 test
 
 "TEST: List should show the machine"
 . docker-machine ls
