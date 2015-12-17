@@ -17,7 +17,7 @@ if ($env:APPVEYOR_BUILD_VERSION) {
   $version = $env:APPVEYOR_BUILD_VERSION -replace('\.[^.\\/]+$')
 } else {
   # run manually
-  [xml]$spec = Get-Content docker.nuspec
+  [xml]$spec = Get-Content docker-machine.nuspec
   $version = $spec.package.metadata.version
 }
 
@@ -39,7 +39,7 @@ $zip.Dispose()
 . choco install -y docker-machine $options -source .
 
 "TEST: Version of binary should match"
-if (-Not $(docker-machine --version).Contains("version $version ")) {
+if (-Not $(docker-machine --version).Contains("version $version,")) {
   Write-Error "FAIL: Wrong version of docker-machine installed!"
 }
 
@@ -56,7 +56,35 @@ if ($(docker-machine ls).Contains("test   -        none             http://127.0
 . docker-machine rm test
 
 "TEST: Uninstall show remove the binary"
-. choco uninstall docker-machine
+. choco uninstall -y docker-machine
+try {
+  . docker-machine
+  Write-Error "FAIL: docker-machine binary still found"
+} catch {
+  Write-Host "PASS: docker-machine not found"
+}
+
+"TEST: Update from older version to single binary version works"
+. choco install -y docker-machine $options -version 0.4.1
+. choco install -y docker-machine $options -source . -version $version
+. ls C:\programdata\chocolatey\lib\docker-machine
+. ls C:\programdata\chocolatey\lib\docker-machine\tools
+$numExe = (get-childitem -path C:\programdata\chocolatey\lib\docker-machine\tools\ | where { $_.extension -eq ".exe" }).Count
+Write-Host "numExe $numExe"
+$numIgnore = (get-childitem -path C:\programdata\chocolatey\lib\docker-machine\tools\ | where { $_.extension -eq ".ignore" }).Count
+Write-Host "numIgnore $numIgnore"
+if ($numExe - 1 -ne $numIgnore) {
+  Write-Error "FAIL: Wrong number of ignored plugins!"
+}
+if ($numExe -ne 1) {
+  Write-Error "FAIL: There mustn't be more than one exe file!"
+}
+if ($numIgnore -ne 0) {
+  Write-Error "FAIL: There mustn't be any ignored plugins!"
+}
+
+"TEST: Uninstall show remove the binary"
+. choco uninstall -y docker-machine
 try {
   . docker-machine
   Write-Error "FAIL: docker-machine binary still found"
