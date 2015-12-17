@@ -65,7 +65,7 @@ try {
 }
 
 "TEST: Update from older version to single binary version works"
-. choco install -y docker-machine $options -version 0.4.1
+. choco install -y docker-machine $options -version 0.5.2
 . choco install -y docker-machine $options -source . -version $version
 . ls C:\programdata\chocolatey\lib\docker-machine
 . ls C:\programdata\chocolatey\lib\docker-machine\tools
