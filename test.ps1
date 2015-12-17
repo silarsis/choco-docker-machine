@@ -53,7 +53,7 @@ if ($(docker-machine ls).Contains("test   -        none             http://127.0
 }
 
 "TEST: Remove the machine should work"
-. docker-machine rm test
+. docker-machine rm -f test
 
 "TEST: Uninstall show remove the binary"
 . choco uninstall -y docker-machine
