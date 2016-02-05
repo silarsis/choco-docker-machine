@@ -53,7 +53,7 @@ Push your changes to GitHub and check the AppVeyor build. See the AppVeyor build
 
 After a successfull AppVeyor build tag the sources and push the new tag to GitHub. This step builds and tests the package and pushes the new package to Chocolatey.
 
-    git tag 0.5.6
+    git tag 0.6.0
     git push --tags
 
 ## AppVeyor build
@@ -115,7 +115,7 @@ Copy the example command with your key
 
 Push the package
 
-    choco push docker-machine.0.5.6.nupkg
+    choco push docker-machine.0.6.0.nupkg
 
 While in moderation you can push the package again to fix errors in the description or installation script etc.
 
