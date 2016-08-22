@@ -1,8 +1,8 @@
 $packageName    = 'docker-machine'
-$url            = 'https://github.com/docker/machine/releases/download/v0.8.0/docker-machine-Windows-i386.exe'
-$checksum       = 'd5c3483ecd12b520a702e19d2cccc4cb'
-$url64          = 'https://github.com/docker/machine/releases/download/v0.8.0/docker-machine-Windows-x86_64.exe'
-$checksum64     = '732afc07186cf2735bf4b8fb9312279a'
+$url            = 'https://github.com/docker/machine/releases/download/v0.8.1/docker-machine-Windows-i386.exe'
+$checksum       = 'efdd1f80db4db0828525e074b2825c27'
+$url64          = 'https://github.com/docker/machine/releases/download/v0.8.1/docker-machine-Windows-x86_64.exe'
+$checksum64     = '28d193966e6e1f5d7b5aad63a6f217b8'
 $checksumType   = 'md5'
 $checksumType64 = 'md5'
 
