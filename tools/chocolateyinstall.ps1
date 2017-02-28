@@ -1,10 +1,10 @@
 $packageName    = 'docker-machine'
-$url            = 'https://github.com/docker/machine/releases/download/v0.9.0/docker-machine-Windows-i386.exe'
-$checksum       = '53f860f85b0d29569197829976fa3dd0'
-$url64          = 'https://github.com/docker/machine/releases/download/v0.9.0/docker-machine-Windows-x86_64.exe'
-$checksum64     = 'c21c768510efcd7e123bbf45b854b7da'
-$checksumType   = 'md5'
-$checksumType64 = 'md5'
+$url            = 'https://github.com/docker/machine/releases/download/v0.10.0/docker-machine-Windows-i386.exe'
+$checksum       = '428def25cc6bb60c6d1b341ced0200aa3281794d661dd8c57a8d54357a532541'
+$url64          = 'https://github.com/docker/machine/releases/download/v0.10.0/docker-machine-Windows-x86_64.exe'
+$checksum64     = 'd923120bd029fb8a79025288fbc33ad65f7c7c072272aa95ad7d5d5bef0f1434'
+$checksumType   = 'sha256'
+$checksumType64 = 'sha256'
 
 $toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageDir  = "$(Split-Path -parent $toolsDir)"
