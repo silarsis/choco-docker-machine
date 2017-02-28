@@ -16,8 +16,8 @@ version=$1
 url="https://github.com/docker/machine/releases/download/v${version}/docker-machine-Windows-i386.exe"
 url64="https://github.com/docker/machine/releases/download/v${version}/docker-machine-Windows-x86_64.exe"
 
-checksum=$(curl -L "${url}" | md5) #  | cut -f 1 -d " ")
-checksum64=$(curl -L "${url64}" | md5) #  | cut -f 1 -d " ")
+checksum=$(curl -L "${url}" | shasum -a 256 | cut -f 1 -d " ")
+checksum64=$(curl -L "${url64}" | shasum -a 256 | cut -f 1 -d " ")
 
 sed -i.bak "s/<version>.*<\/version>/<version>${version}<\/version>/" docker-machine.nuspec
 
