@@ -3,7 +3,7 @@
   <metadata>
     <id>docker-machine</id>
     <title>docker-machine</title>
-    <version>0.12.1</version>
+    <version>0.12.2</version>
     <authors>Docker Contributors</authors>
     <owners>silarsis</owners>
     <summary>Machine management for a container-centric world</summary>
