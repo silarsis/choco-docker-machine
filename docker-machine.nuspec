@@ -3,7 +3,7 @@
   <metadata>
     <id>docker-machine</id>
     <title>docker-machine</title>
-    <version>0.14.0</version>
+    <version>0.15.0</version>
     <authors>Docker Contributors</authors>
     <owners>silarsis</owners>
     <summary>Machine management for a container-centric world</summary>
@@ -14,7 +14,7 @@
     <projectSourceUrl>https://github.com/docker/machine</projectSourceUrl>
     <docsUrl>https://docs.docker.com/machine/</docsUrl>
     <bugTrackerUrl>https://github.com/docker/machine/issues</bugTrackerUrl>
-    <iconUrl>https://github.com/docker/docker.github.io/raw/master/machine/img/logo.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/docker/docker.github.io/master/machine/img/logo.png</iconUrl>
     <licenseUrl>https://github.com/docker/machine/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>docker-machine docker</tags>
