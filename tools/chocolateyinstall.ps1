@@ -21,4 +21,13 @@ if ([System.IO.Directory]::Exists("$env:ChocolateyInstall\lib\docker-machine")) 
 }
 
 New-Item -ItemType Directory -Force -Path "$installDir"
-Get-ChocolateyWebFile "$packageName" "$installPath" "$url" "$url64" -checksum "$checksum" -checksumType "$checksumType" -checksum64 "$checksum64" -checksumType64 "$checksumType64"
+
+Get-ChocolateyWebFile `
+  -PackageName    $packageName `
+  -FileFullPath   $installPath `
+  -Url            $url `
+  -Url64bit       $url64 `
+  -Checksum       $checksum `
+  -Checksum64     $checksum64 `
+  -ChecksumType   $checksumType `
+  -ChecksumType64 $checksumType64
